@@ -38,14 +38,14 @@
         </div>
         <div class="navbar-collapse collapse" ng-controller="NavbarCtrl">
           <ul class="nav navbar-nav">
-            <li ng-class='{active: isActive("#/")}'><a href="#">Home</a></li>
-            <li ng-class='{active: isActive("#/about")}'><a href="#about">About</a></li>
+            <li ng-class='{active: isActive("#/")}'><a href="#/">Home</a></li>
+            <li ng-class='{active: isActive("#/about")}'><a href="#/about">About</a></li>
             <li class="dropdown" ng-class='{active: isActive("#/project")}'>
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">School Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header">First Year</li>
                 <li class="divider"></li>
-                <li><a href="#/project/42sh">Shell (C)</a></li>
+                <li><a href="#/project/shell">Shell (C)</a></li>
                 <li><a href="#/project/rt">RayTracer (C)</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Second Year</li>
@@ -64,7 +64,7 @@
                 <li><a href="#">TeamCode - Projet de fin d'&eacute;tude(C++, Qt)</a></li>
               </ul>
             </li>
-            <li ng-class='{active: isActive("/#/contact")}'><a href="#contact">Contact</a></li>
+            <li ng-class='{active: isActive("/#/contact")}'><a href="#/contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -106,6 +106,8 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/project.js"></script>
         <script src="scripts/controllers/navbar.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
 </body>
 </html>
