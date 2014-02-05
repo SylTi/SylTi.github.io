@@ -41,16 +41,16 @@
             <li ng-class='{active: isActive("#/")}'><a href="#/">Home</a></li>
             <li ng-class='{active: isActive("#/about")}'><a href="#/about">About</a></li>
             <li class="dropdown" ng-class='{active: isActive("#/project")}'>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">School Projects<b class="caret"></b></a>
+              <a ng-href="#" class="dropdown-toggle" data-toggle="dropdown">School Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header">First Year</li>
                 <li class="divider"></li>
-                <li><a href="#/project/shell">Shell (C)</a></li>
-                <li><a href="#/project/rt">RayTracer (C)</a></li>
+                <li><a ng-href="#/project/shell">Shell (C)</a></li>
+                <li><a ng-href="#/project/rt">RayTracer (C)</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Second Year</li>
-                <li><a href="#/techweb">Techweb (PHP)</a></li>
-                <li><a href="#/zappy">Zappy (C)</a></li>
+                <li><a ng-href="#/techweb">Techweb (PHP)</a></li>
+                <li><a ng-href="#/zappy">Zappy (C)</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Third Year</li>
                 <li><a href="#">httpd (C++)</a></li>
