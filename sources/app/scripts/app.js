@@ -12,6 +12,10 @@ angular.module('sylTigithubioApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/project', {
+        templateUrl: 'views/project.html',
+        controller: 'ProjectCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
