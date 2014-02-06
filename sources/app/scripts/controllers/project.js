@@ -1,33 +1,28 @@
 'use strict';
 
-var Project = function (name, langage, link)
-{
-	this.name = name;
-	this.langage = langage;
-	this.link = link;
-};
-
 angular.module('sylTigithubioApp')
-	.controller('ProjectCtrl', function ($scope, $routeParams) {
+	.controller('ProjectCtrl', function ($scope, $routeParams, Projectsinfos, Project) {
 		$scope.awesomeThings = [
 			'HTML5 Boilerplate',
 			'AngularJS',
 			'Karma'
 		];
-		var projects = {};
-		projects.shell = new Project('shell', 'C', 'http://github.com/SylTi/');
-		projects.rt = new Project('Raytracer', 'C', 'http://github.com/SylTi/');
-		projects.techweb = new Project('Techweb', 'PHP', 'http://github.com/SylTi/');
 
+		$scope.project = new Project('invalid', '#', 'none');
 
 		var current = $routeParams.name;
-		if (projects[current] !== undefined)
-		{
-			$scope.project = projects[current];
+		var stop = false;
+		for (var i = 0; i < Projectsinfos.length; i++) {
+			if (stop === true) {
+				break;
+			}
+			for (var y = 0; y < Projectsinfos[i].length; y++) {
+				if (Projectsinfos[i][y].name.indexOf(current) >= 0)
+				{
+					$scope.project = Projectsinfos[i][y];
+					stop = true;
+					break;
+				}
+			}
 		}
-		else
-		{
-			$scope.project = new Project('invalid', '#', 'none');
-		}
-		
 	});

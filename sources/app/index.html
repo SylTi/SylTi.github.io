@@ -40,33 +40,29 @@
           <ul class="nav navbar-nav">
             <li ng-class='{active: isActive("/")}'><a href="#/">Home</a></li>
             <li ng-class='{active: isActive("/about")}'><a href="#/about">About</a></li>
-            <li class="dropdown">
+            <li class="dropdown" ng-class='{active: isActive("/project")}'>
               <a class="dropdown-toggle">
                 School Projects
               </a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header">First Year</li>
                 <li class="divider"></li>
-                <li><a ng-href="#/project/shell">Shell (C)</a></li>
-                <li><a ng-href="#/project/rt">RayTracer (C)</a></li>
+                <li ng-repeat="projs in Projectsinfos[0]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Second Year</li>
-                <li><a ng-href="#/project/techweb">Techweb (PHP)</a></li>
-                <li><a ng-href="#/project/zappy">Zappy (C)</a></li>
+                <li ng-repeat="projs in Projectsinfos[1]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Third Year</li>
-                <li><a ng-href="#/project/httpd">httpd (C++)</a></li>
-                <li><a ng-href="#/project/ecommerce">E-Commerce (Java)</a></li>
+                <li ng-repeat="projs in Projectsinfos[2]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Fourth Year</li>
-                <li><a ng-href="#/project/mywmp">MyWMP (C#, WPF)</a></li>
-                <li><a href="#"></a></li>
+                <li ng-repeat="projs in Projectsinfos[3]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Fith Year</li>
-                <li><a ng-href="#/project/teamcode">TeamCode - Projet de fin d'&eacute;tude(C++, Qt)</a></li>
+                <li ng-repeat="projs in Projectsinfos[4]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
               </ul>
             </li>
-            <li ng-class='{active: isActive("/#/contact")}'><a href="/contact">Contact</a></li>
+            <li ng-class='{active: isActive("/contact")}'><a href="#/contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -111,6 +107,7 @@
     <script src="scripts/controllers/navbar.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/services/projectsInfos.js"></script>
     <!-- endbuild -->
 
 </body>
