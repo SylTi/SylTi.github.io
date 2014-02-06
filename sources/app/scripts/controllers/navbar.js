@@ -8,6 +8,13 @@ angular.module('sylTigithubioApp')
       'Karma'
     ];
     $scope.isActive = function(route) {
-      return route === $location.path();
+      if ($location.path().indexOf('project') !== -1)
+      {
+        return true;
+      }
+      else
+      {
+        return route === $location.path();
+      }
     };
   });
