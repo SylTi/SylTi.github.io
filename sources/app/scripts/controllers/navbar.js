@@ -7,7 +7,7 @@ angular.module('sylTigithubioApp')
       'AngularJS',
       'Karma'
     ];
-    $scope.isActive = function(route) {
+    $scope.isActive = function isActive(route) {
       if (($location.path().indexOf('project') >= 0) && (route.indexOf('project') >= 0))
       {
         return true;
