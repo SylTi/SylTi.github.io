@@ -17,11 +17,6 @@ angular.module('sylTigithubioApp')
 		content: ''
 	};
 
-	$scope.test = function ()
-	{
-		$scope.result = data;
-	};
-
 	$scope.send = function ()
 	{
 		var data =
@@ -44,7 +39,7 @@ angular.module('sylTigithubioApp')
 		$http.post('https://mandrillapp.com/api/1.0/messages/send.json', data)
 		.success(function(res)
 		{
-			if (res[0].status == 'sent')
+			if (res[0].status === 'sent')
 			{
 				$scope.resultgood = 'Message Envoyé';
 			}
