@@ -27,3 +27,17 @@ body {
 { 
   cursor: pointer; 
 }
+
+/*.asterisk:before {
+  font-family: "Glyphicons Halflings";
+  content: "*";
+}*/
+
+.styledLI li {
+  list-style-type: none; 
+}
+
+.styledLI li:before {
+  font-family: "Glyphicons Halflings";
+  content: "*";
+}
