@@ -3,10 +3,11 @@
 angular.module('sylTigithubioApp')
 	.factory('Project', function Proj()
 	{
-		function Project(name, langage, link)
+		function Project(name, langage, description, link)
 			{
 				this.name = name;
 				this.langage = langage;
+				this.description = description;
 				this.link = link;
 			}
 		return Project;
@@ -23,18 +24,20 @@ angular.module('sylTigithubioApp')
 				projsYear4 = [],
 				projsYear5 = [];
 
-			projsYear1.push(new Project('shell', 'C', 'http://github.com/SylTi/'));
-			projsYear1.push(new Project('Raytracer', 'C', 'http://github.com/SylTi/'));
+			projsYear1.push(new Project('Shell', 'C', '', 'http://github.com/SylTi/'));
+			projsYear1.push(new Project('Raytracer', 'C', '', 'http://github.com/SylTi/'));
 
-			projsYear2.push(new Project('Techweb', 'PHP', 'http://github.com/SylTi/'));
-			projsYear2.push(new Project('Zappy', 'C', 'http://github.com/SylTi/'));
+			projsYear2.push(new Project('Techweb', 'PHP', '', 'http://github.com/SylTi/'));
+			projsYear2.push(new Project('Zappy', 'C', '', 'http://github.com/SylTi/'));
 
-			projsYear3.push(new Project('httpd', 'C++', 'http://github.com/SylTi/'));
-			projsYear3.push(new Project('Ecommerce Website', 'Java/JSP/JSF', 'http://github.com/SylTi/'));
+			projsYear3.push(new Project('httpd', 'C++', '', 'http://github.com/SylTi/'));
+			projsYear3.push(new Project('Ecommerce Website', '', 'Java/JSP/JSF', 'http://github.com/SylTi/'));
 
-			projsYear4.push(new Project('MyWMP', 'C#/WMP', 'http://github.com/SylTi/'));
+			projsYear4.push(new Project('MyWMP', 'C#/WMP', '', 'http://github.com/SylTi/'));
 
-			projsYear5.push(new Project('TeamCode', 'C++/Qt', 'http://github.com/SylTi/'));
+			projsYear5.push(new Project('TeamCode', 'C++/Qt',
+				'Le projet TeamCode est un environnement de développement (IDE) multi-langage et multiplateforme destiné principalement au monde des développeurs professionnels mais également à celui des développeurs amateurs nécessitant une collaboration poussée entre les différents acteurs. <br />Il a été crée dans le but d\'optimiser le travail en équipe que ce soit sur des projets de taille moyenne ou sur des projets plus conséquents.<br />Basé sur une architecture client/serveur, TeamCode est une solution de développement simple, légère et efficace.<br />Ca particularité vient de l\'ajout d\'une couche réseau permettant un travail collaboratif extrêmement poussé en temps réel, ainsi qu\'un outil de gestion de version des fichiers sur le projet intégré totalement dans la solution TeamCode',
+				'Non Disponible <a href="https://www.youtube.com/watch?v=naBTXXypOAQ">Demo Video</a>'));
 			
 			projsFull.push(projsYear1);
 			projsFull.push(projsYear2);

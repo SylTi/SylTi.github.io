@@ -34,31 +34,31 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">SylTi CV</a>
+          <a class="navbar-brand" href="#">SylTi's CV</a>
         </div>
         <div class="navbar-collapse collapse" ng-controller="NavbarCtrl">
           <ul class="nav navbar-nav">
-            <li ng-class="{active: isActive('/')}"><a href="#/">Home</a></li>
-            <li ng-class="{active: isActive('/about')}"><a href="#/about">About</a></li>
+            <li ng-class="{active: isActive('/')}"><a href="#/">Accueil</a></li>
+            <li ng-class="{active: isActive('/about')}"><a href="#/about">A propos de moi</a></li>
             <li class="dropdown" ng-class="{active: isActive('/project')}">
               <a class="dropdown-toggle">
-                School Projects
+                Projets d'&eacute;cole
               </a>
               <ul class="dropdown-menu">
-                <li class="dropdown-header">First Year</li>
+                <li class="dropdown-header">Premi&egrave;re ann&eacute;e</li>
                 <li class="divider"></li>
                 <li ng-repeat="projs in Projectsinfos[0]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Second Year</li>
+                <li class="dropdown-header">Deuxi&egrave;me ann&eacute;e</li>
                 <li ng-repeat="projs in Projectsinfos[1]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Third Year</li>
+                <li class="dropdown-header">Troisi&egrave;me ann&eacute;e</li>
                 <li ng-repeat="projs in Projectsinfos[2]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Fourth Year</li>
+                <li class="dropdown-header">Quatri&egrave;me ann&eacute;e</li>
                 <li ng-repeat="projs in Projectsinfos[3]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Fith Year</li>
+                <li class="dropdown-header">Cinqui&egrave;me ann&eacute;e</li>
                 <li ng-repeat="projs in Projectsinfos[4]"><a ng-href="#/project/{{projs.name}}">{{projs.name}} ({{projs.langage}})</a></li>
               </ul>
             </li>
@@ -70,7 +70,7 @@
 
     <div class="container" ng-view=""></div>
 
-    <div class="footer"><p>© SylTi 2013 powered by <img src="./images/yeoman.png" alt="Yeoman" class="img-thumbnail" height="60" width="55" /> <img src="./images/angular-logo.jpeg" alt="AngularJS" class="img-thumbnail" height="50" width="50" /> <img src="./images/Twitter_Boostrap_logo.svg" alt="Bootstrap" class="img-thumbnail" height="50" width="50" /><img src="./images/GitHub_Logo.png" alt="GitHub" class="img-thumbnail" height="100" width="100" /></p></div>
+    <div class="footer"><p>© SylTi 2013 powered by <a href="http://yeoman.io/"><img src="./images/yeoman.png" alt="Yeoman" class="img-thumbnail" height="60" width="55" /></a> <a href="http://www.angularjs.org"><img src="./images/angular-logo.jpeg" alt="AngularJS" class="img-thumbnail" height="50" width="50" /></a> <a href="http://getbootstrap.com"><img src="./images/Twitter_Boostrap_logo.svg" alt="Bootstrap" class="img-thumbnail" height="50" width="50" /></a> <a href="http://github.com"><img src="./images/GitHub_Logo.png" alt="GitHub" class="img-thumbnail" height="100" width="100" /></a></p></div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <!-- <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
