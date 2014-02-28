@@ -41,3 +41,5 @@ body {
   font-family: "Glyphicons Halflings";
   content: "*";
 }
+
+.angular-google-map-container { height: 100px; }

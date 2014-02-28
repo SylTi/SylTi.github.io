@@ -64,7 +64,9 @@
             </li>
             <li ng-class="{active: isActive('/contact')}"><a href="#/contact">Contact</a></li>
           </ul>
+          <div class="nav navbar-nav navbar-right"><a href="http://yeoman.io/"><img src="./images/yeoman.png" alt="Yeoman" class="img-thumbnail" height="60" width="55" /></a> <a href="http://www.angularjs.org"><img src="./images/angular-logo.jpeg" alt="AngularJS" class="img-thumbnail" height="50" width="50" /></a> <a href="http://getbootstrap.com"><img src="./images/Twitter_Boostrap_logo.svg" alt="Bootstrap" class="img-thumbnail" height="50" width="50" /></a> <a href="http://github.com"><img src="./images/GitHub_Logo.png" alt="GitHub" class="img-thumbnail" height="100" width="100" /></a></div>
         </div><!--/.nav-collapse -->
+
       </div>
     </div>
 
@@ -87,6 +89,10 @@
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
+
+    <!-- Maps -->
+    <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
@@ -97,6 +103,8 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -110,6 +118,5 @@
     <script src="scripts/services/projectsInfos.js"></script>
     <script src="scripts/services/Trad.js"></script>
     <!-- endbuild -->
-
-</body>
+  </body>
 </html>
