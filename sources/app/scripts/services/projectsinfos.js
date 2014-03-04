@@ -24,14 +24,28 @@ angular.module('sylTigithubioApp')
 				projsYear4 = [],
 				projsYear5 = [];
 
-			projsYear1.push(new Project('Shell', 'C', '', 'http://github.com/SylTi/'));
-			projsYear1.push(new Project('Raytracer', 'C', '', 'http://github.com/SylTi/'));
+			projsYear1.push(new Project('Shell', 'C',
+				'Le 42sh est un projet à réaliser en groupe de quatre à six.<br />Ce projet est l\'un des plus importants de première année.<br />Le projet consiste en l\'écriture d\'un Shell du niveau de bash, tcsh et autres.<br /><br /><a href="./images/screens/42sh.jpg"><img src="./images/screens/42sh.jpg" height="130px" width="280px" /></a>',
+				'http://github.com/SylTi/'));
+			projsYear1.push(new Project('Raytracer', 'C',
+				'Le Raytracer est un projet à réaliser en groupe de quatre à six.<br />Ce projet est l\'un des plus importants de première année.<br />Le but de ce projet est de créer une "image de synthèse" à partir de la méthode de Ray-Tracing.<br />La méthode dite de Ray-Tracing est la suivante : pour chaque pixel (point de l\'image), on détermine une couleur en fonction de l’intersection entre l’un des rayons lancés et l’un des objets se trouvant dans la scène que l\'on observe à partir d’un point de celle-ci.<br />Cette couleur est ensuite influencée par des effets ajoutés tels que les lumières, les ombres, la transparence… <br /><br /><a href="./images/screens/rt1.jpg"><img src="./images/screens/rt1.jpg" height="130px" width="280px" /></a>  <a href="./images/screens/rt2.jpg"><img src="./images/screens/rt2.jpg" height="130px" width="280px" /></a>',
+				'http://github.com/SylTi/'));
 
-			projsYear2.push(new Project('Techweb', 'PHP', '', 'http://github.com/SylTi/'));
-			projsYear2.push(new Project('Zappy', 'C', '', 'http://github.com/SylTi/'));
+			projsYear2.push(new Project('Techweb', 'PHP',
+				'Le techweb est un projet de 2eme année ce deroulant sur toute l\'année.<br />Le but de ce projet est de réaliser une solution de gestion de projet orientée web.<br /><br /><a href="./images/screens/techweb.jpg"><img src="./images/screens/techweb.jpg" height="130px" width="280px" /></a>',
+				'<a href="https://github.com/SylTi/school/tree/master/school/second_year/php/techweb">TechWeb</a>'));
+			projsYear2.push(new Project('Zappy', 'C',
+				'',
+				'http://github.com/SylTi/'));
+			projsYear2.push(new Project('Vennys Project', 'PHP',
+				'Vennys Project était mon projet de fin de 2eme année.<br />Il a été réalisé par un groupe de 6 personnes.<br />Le but de ce projet est de créer un FrontEnd en PHP pour le tracker bitTorrent XBT<br /><br /><a href="./images/screens/vennys.jpg"><img src="./images/screens/vennys.jpg" height="130px" width="280px" /></a>',
+				'<a href="https://github.com/SylTi/school/tree/master/school/second_year/php/vennys">Vennys</a>'));
+
 
 			projsYear3.push(new Project('httpd', 'C++', '', 'http://github.com/SylTi/'));
-			projsYear3.push(new Project('Ecommerce Website', '', 'Java/JSP/JSF', 'http://github.com/SylTi/'));
+			projsYear3.push(new Project('Ecommerce Website', 'Java/JSP/JSF',
+				'Site de E-commerce réalisé from scratch en Java/JSF/JSP',
+				'<a href="https://github.com/SylTi/school/tree/master/school/third_year/java/Epimarket">EpiMarket</a>'));
 
 			projsYear4.push(new Project('MyWMP', 'C#/WMP', '', 'http://github.com/SylTi/'));
 
@@ -49,3 +63,4 @@ angular.module('sylTigithubioApp')
 // AngularJS will instantiate a singleton by calling "new" on this function
 		}
 	);
+

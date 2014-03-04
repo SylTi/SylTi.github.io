@@ -18,8 +18,12 @@ angular.module('sylTigithubioApp', [
         templateUrl: 'views/project.html',
         controller: 'ProjectCtrl'
       })
-      .when('/about', {
+      .when('/about2', {
         templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
+      })
+      .when('/about', {
+        templateUrl: 'views/about2.html',
         controller: 'AboutCtrl'
       })
       .when('/contact', {
