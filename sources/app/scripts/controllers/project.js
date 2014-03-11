@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('sylTigithubioApp')
-	.controller('ProjectCtrl', function ($scope, $routeParams, Projectsinfos, Project) {
+	.controller('ProjectCtrl', function ($scope, $routeParams, Projectsinfos, Project, $sce) {
 		$scope.awesomeThings = [
 			'HTML5 Boilerplate',
 			'AngularJS',
@@ -11,6 +11,16 @@ angular.module('sylTigithubioApp')
 		$scope.project = new Project('invalid', '#', 'none');
 
 		var current = $routeParams.name;
+		/*console.log(current);
+		if (current === "TeamCode")
+		{
+			//window.alert("here");
+			console.debug($sce);
+			$scope.url = $sce.trustAsResourceUrl('http://www.youtube.com/embed/naBTXXypOAQ');
+			$scope.youtube = $sce.trustAsHtml('<iframe width="560" height="315" ng-src="' + $scope.url +'" frameborder="0" allowfullscreen></iframe>');
+			console.debug($scope.url);
+			console.debug($scope.youtube);
+		}*/
 		var stop = false;
 		for (var i = 0; i < Projectsinfos.length; i++) {
 			if (stop === true) {
