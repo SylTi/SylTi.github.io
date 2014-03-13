@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('sylTigithubioApp')
-	.controller('ProjectCtrl', function ($scope, $routeParams, Projectsinfos, Project, $sce) {
+	.controller('ProjectCtrl', function ($scope, $routeParams, Projectsinfos, Project){//, $sce) {
 		$scope.awesomeThings = [
 			'HTML5 Boilerplate',
 			'AngularJS',
@@ -11,6 +11,7 @@ angular.module('sylTigithubioApp')
 		$scope.project = new Project('invalid', '#', 'none');
 
 		var current = $routeParams.name;
+
 		/*console.log(current);
 		if (current === "TeamCode")
 		{

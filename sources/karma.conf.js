@@ -21,7 +21,8 @@ module.exports = function(config) {
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js',
-      'app/bower_components/angular-bootstrap/ui-bootstrap-tpls.js'
+      'app/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+      'bower_components/angular-google-maps/dist/angular-google-maps.js'
     ],
 
     // list of files / patterns to exclude
