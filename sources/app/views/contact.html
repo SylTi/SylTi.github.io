@@ -1,0 +1,33 @@
+<div class="text-danger">{{resultbad}}</div>
+<div class="text-success">{{resultgood}}</div>
+<form class="form-horizontal" role="form" name="formMail">
+	<div class="form-group">
+		<label for="inputEmail" class="col-sm-2 control-label">Votre Nom</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="inputName" placeholder="Nom" ng-model="msg.name" required>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputEmail" class="col-sm-2 control-label">Votre Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="msg.email" required>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputSubject" class="col-sm-2 control-label">Sujet</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="inputSubject" placeholder="La raison de votre contact" ng-model="msg.subject" required>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputContent" class="col-sm-2 control-label">Message (HTML Accept&eacute;)</label>
+		<div class="col-sm-10">
+			<textarea type="text" class="form-control" id="inputContent" placeholder="Votre message" row="6" ng-model="msg.content" required></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<button type="submit" class="btn btn-default" ng-click="send()" ng-disabled="!formMail.$valid">Envoyer</button>
+		</div>
+	</div>
+</form>
