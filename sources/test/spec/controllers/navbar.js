@@ -3,7 +3,7 @@
 describe('Controller: NavbarCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('sylTigithubioApp'));
+  beforeEach(module('sylTiCvApp'));
 
   var NavbarCtrl,
     scope;

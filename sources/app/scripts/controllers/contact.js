@@ -1,15 +1,21 @@
 'use strict';
 
-angular.module('sylTigithubioApp')
-.controller('ContactCtrl', function ($scope, $http)
-{
-	$scope.awesomeThings = [
-		'HTML5 Boilerplate',
-		'AngularJS',
-		'Karma'
-	];
-
-	$scope.msg =
+/**
+ * @ngdoc function
+ * @name sylTiCvApp.controller:ContactCtrl
+ * @description
+ * # ContactCtrl
+ * Controller of the sylTiCvApp
+ */
+angular.module('sylTiCvApp')
+  .controller('ContactCtrl', function ($scope, $http) 
+  {
+    $scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+    $scope.msg =
 	{
 		name: '',
 		email: '',
@@ -49,4 +55,4 @@ angular.module('sylTigithubioApp')
 			}
 		});
 	};
-});
+  });

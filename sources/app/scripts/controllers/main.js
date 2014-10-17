@@ -1,6 +1,13 @@
 'use strict';
 
-angular.module('sylTigithubioApp')
+/**
+ * @ngdoc function
+ * @name sylTiCvApp.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of the sylTiCvApp
+ */
+angular.module('sylTiCvApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

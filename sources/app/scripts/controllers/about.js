@@ -1,15 +1,22 @@
 'use strict';
 
-angular.module('sylTigithubioApp')
-	.controller('AboutCtrl', function ($scope)
-	{
-		$scope.awesomeThings = [
-			'HTML5 Boilerplate',
-			'AngularJS',
-			'Karma'
-		];
+/**
+ * @ngdoc function
+ * @name sylTiCvApp.controller:AboutCtrl
+ * @description
+ * # AboutCtrl
+ * Controller of the sylTiCvApp
+ */
+angular.module('sylTiCvApp')
+  .controller('AboutCtrl', function ($scope) 
+  {
+	    $scope.awesomeThings = [
+	      'HTML5 Boilerplate',
+	      'AngularJS',
+	      'Karma'
+	    ];
 
-		$scope.map =
+    	$scope.map =
 		{
 			center:
 			{
@@ -18,4 +25,11 @@ angular.module('sylTigithubioApp')
 			},
 			zoom: 12
 		};
-	});
+		 $scope.marker = {
+			coords: {
+				latitude: 48.793521,
+				longitude: 2.398767
+			},
+			id: 0
+		};
+  });

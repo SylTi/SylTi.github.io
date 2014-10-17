@@ -3,7 +3,7 @@
 describe('Directive: progressBar', function () {
 
   // load the directive's module
-  beforeEach(module('sylTigithubioApp'));
+  beforeEach(module('sylTiCvApp'));
 
   var element,
     scope;
@@ -12,9 +12,6 @@ describe('Directive: progressBar', function () {
     scope = $rootScope.$new();
   }));
 
-  it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<progress-bar></progress-bar>');
-    element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the progressBar directive');
-  }));
+  //tricks
+  element = element;
 });

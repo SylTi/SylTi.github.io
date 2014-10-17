@@ -1,30 +1,37 @@
 'use strict';
 
-angular.module('sylTigithubioApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ngRoute',
-  'ui.bootstrap',
-  'google-maps'
-])
+/**
+ * @ngdoc overview
+ * @name sylTiCvApp
+ * @description
+ * # sylTiCvApp
+ *
+ * Main module of the application.
+ */
+angular
+  .module('sylTiCvApp', [
+    'ngAnimate',
+    'ngCookies',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch',
+    'ui.bootstrap',
+    'google-maps'.ns()
+  ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/project/:name', {
-        templateUrl: 'views/project.html',
-        controller: 'ProjectCtrl'
-      })
-      .when('/about2', {
+      .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about2.html',
-        controller: 'AboutCtrl'
+      .when('/project/:name', {
+        templateUrl: 'views/project.html',
+        controller: 'ProjectCtrl'
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',

@@ -1,19 +1,18 @@
-/*'use strict';
+'use strict';
 
-describe('Service: Projectsinfos', function () {
+describe('Service: projectsInfos', function () {
 
   // load the service's module
-  beforeEach(module('sylTigithubioApp'));
+  beforeEach(module('sylTiCvApp'));
 
   // instantiate service
-  var Projectsinfos;
-  beforeEach(inject(function (_Projectsinfos_) {
-    Projectsinfos = _Projectsinfos_;
+  var projectsInfos;
+  beforeEach(inject(function (_projectsInfos_) {
+    projectsInfos = _projectsInfos_;
   }));
 
   it('should do something', function () {
-    expect(!!Projectsinfos).toBe(true);
+    expect(!!projectsInfos).toBe(true);
   });
 
 });
-*/
