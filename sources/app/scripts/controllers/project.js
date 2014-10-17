@@ -9,11 +9,6 @@
  */
 angular.module('sylTiCvApp')
   .controller('ProjectCtrl', function ($scope, $routeParams, projectsInfos, Project) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 
 	$scope.project = new Project('invalid', '#', 'none');
 
