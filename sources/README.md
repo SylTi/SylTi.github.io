@@ -10,4 +10,5 @@ NodeJS et Bower sont prérequis.
 npm install && bower install
 
 Version locale : grunt serve
+
 Version minifier : lunchGrunt.sh 
